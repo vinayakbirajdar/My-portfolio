@@ -1,0 +1,12 @@
+.app-container {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    background-color: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-pages {
+    flex: 1;
+}

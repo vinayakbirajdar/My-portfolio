@@ -1,0 +1,59 @@
+.welcome-container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.welcome-content {
+    animation: fadeUp 1.2s ease-out;
+}
+
+.welcome-title {
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.welcome-subtitle {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: #e0e0e0;
+    margin: 16px 0 8px;
+}
+
+.welcome-role {
+    font-size: 1rem;
+    color: #9adfff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
