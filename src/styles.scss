@@ -1,3 +1,8 @@
+/* IMPORT GLOBAL THEME */
+// @import './assets/styles/theme';
+@import './app/assets/theme.scss';
+
+/* GLOBAL RESET */
 html,
 body {
     margin: 0;
@@ -5,12 +10,15 @@ body {
     height: 100%;
 }
 
+/* APP BASE STYLES */
 body {
-    overflow: hidden;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    overflow-x: hidden;
 }
 
+/* ANGULAR ROUTING FIX */
 router-outlet {
     display: block;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
