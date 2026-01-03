@@ -1,32 +1,28 @@
 <div class="sidebar" [class.collapsed]="isCollapsed">
 
-    <!-- TOGGLE BUTTON -->
-    <div class="sidebar-header">
-        <button class="toggle-btn" (click)="toggleSidebar()">
-            ☰
-        </button>
+    <div class="sidebar-header" (click)="toggleSidebar()">
+        <mat-icon class="icon">menu</mat-icon>
         <span class="logo" *ngIf="!isCollapsed">My Portfolio</span>
     </div>
 
-    <!-- MENU -->
     <ul class="menu">
         <li class="menu-item active">
-            <span class="icon">🏠</span>
+            <mat-icon class="icon">home</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Home</span>
         </li>
 
         <li class="menu-item">
-            <span class="icon">👤</span>
+            <mat-icon class="icon">person</mat-icon>
             <span class="text" *ngIf="!isCollapsed">About</span>
         </li>
 
         <li class="menu-item">
-            <span class="icon">💼</span>
+            <mat-icon class="icon">work</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Projects</span>
         </li>
 
         <li class="menu-item">
-            <span class="icon">📞</span>
+            <mat-icon class="icon">call</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Contact</span>
         </li>
     </ul>

@@ -22,13 +22,6 @@
     padding: 16px;
     gap: 12px;
     overflow: hidden;
-}
-
-.toggle-btn {
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 20px;
     cursor: pointer;
 }
 
@@ -40,6 +33,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     flex-shrink: 0;
+    margin-bottom: 5px;
 }
 
 /* MENU */
