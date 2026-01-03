@@ -6,22 +6,22 @@
     </div>
 
     <ul class="menu">
-        <li class="menu-item active">
+        <li class="menu-item active" routerLink="/home" routerLinkActive="active">
             <mat-icon class="icon">home</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Home</span>
         </li>
 
-        <li class="menu-item">
+        <li class="menu-item" routerLink="/about" routerLinkActive="active">
             <mat-icon class="icon">person</mat-icon>
             <span class="text" *ngIf="!isCollapsed">About</span>
         </li>
 
-        <li class="menu-item">
+        <li class="menu-item" routerLink="/project" routerLinkActive="active">
             <mat-icon class="icon">work</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Projects</span>
         </li>
 
-        <li class="menu-item">
+        <li class="menu-item" routerLink="/contact" routerLinkActive="active">
             <mat-icon class="icon">call</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Contact</span>
         </li>
