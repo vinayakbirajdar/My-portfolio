@@ -4,7 +4,9 @@
             #0f2027,
             #203a43,
             #2c5364);
-
+    // side bar bgackground color
+    --sidebar-bg: rgba(15, 32, 39, 0.85);
+    --sidebar-backdrop: blur(10px);
     /* SURFACE COLORS (used on top of gradient) */
     --bg-surface: rgba(17, 24, 39, 0.85);
     /* cards, panels */

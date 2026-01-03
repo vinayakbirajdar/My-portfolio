@@ -1,28 +1,28 @@
 <div class="sidebar" [class.collapsed]="isCollapsed">
 
     <div class="sidebar-header" (click)="toggleSidebar()">
-        <mat-icon class="icon">menu</mat-icon>
+        <mat-icon class="icon">menu_open</mat-icon>
         <span class="logo" *ngIf="!isCollapsed">My Portfolio</span>
     </div>
 
     <ul class="menu">
         <li class="menu-item active" routerLink="/home" routerLinkActive="active">
-            <mat-icon class="icon">home</mat-icon>
+            <mat-icon class="icon">dashboard</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Home</span>
         </li>
 
         <li class="menu-item" routerLink="/about" routerLinkActive="active">
-            <mat-icon class="icon">person</mat-icon>
+            <mat-icon class="icon">account_circle</mat-icon>
             <span class="text" *ngIf="!isCollapsed">About</span>
         </li>
 
         <li class="menu-item" routerLink="/project" routerLinkActive="active">
-            <mat-icon class="icon">work</mat-icon>
+            <mat-icon class="icon">layers</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Projects</span>
         </li>
 
         <li class="menu-item" routerLink="/contact" routerLinkActive="active">
-            <mat-icon class="icon">call</mat-icon>
+            <mat-icon class="icon">support_agent</mat-icon>
             <span class="text" *ngIf="!isCollapsed">Contact</span>
         </li>
     </ul>
