@@ -8,5 +8,11 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'app/assets/resume/VinayakBirajdarResume.pdf';
+    link.download = 'Vinayak_Birajdar_Resume.pdf';
+    link.click();
+  }
 
 }
