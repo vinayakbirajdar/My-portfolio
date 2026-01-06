@@ -13,3 +13,14 @@
     border-bottom-right-radius: 20px;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 0;
+    }
+
+    .main-pages {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}

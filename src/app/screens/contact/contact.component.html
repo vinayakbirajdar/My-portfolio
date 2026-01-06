@@ -40,9 +40,10 @@
                         Message is required
                     </small>
                 </div>
-                <div class="cv-button">
-                    Submit
-                </div>
+
+                <button class="cv-button" type="submit" [disabled]="isLoading">
+                    {{ isLoading ? 'Sending...' : 'Send Message' }}
+                </button>
             </form>
 
         </div>
@@ -50,23 +51,23 @@
 
             <div class="info-item">
                 <h2 class="label-text">
-                    <mat-icon class="info-icon">mail</mat-icon>
+                    <mat-icon class="info-icon">alternate_email</mat-icon>
                     Gmail
                 </h2>
-                <h1 class="label-value">VinayakGmail.com</h1>
+                <h1 class="label-value">Vinayakbirajdar2025&#64;gmail.com</h1>
             </div>
 
             <div class="info-item">
                 <h2 class="label-text">
-                    <mat-icon class="info-icon">call</mat-icon>
+                    <mat-icon class="info-icon">phone_iphone</mat-icon>
                     Phone No.
                 </h2>
-                <h1 class="label-value">8788010226</h1>
+                <h1 class="label-value">+91 8788010226</h1>
             </div>
 
             <div class="info-item">
                 <h2 class="label-text">
-                    <mat-icon class="info-icon">location_on</mat-icon>
+                    <mat-icon class="info-icon">public</mat-icon>
                     Location
                 </h2>
                 <h1 class="label-value">Pune</h1>
@@ -74,7 +75,7 @@
 
             <div class="info-item">
                 <h2 class="label-text">
-                    <mat-icon class="info-icon">camera_alt</mat-icon>
+                    <mat-icon class="info-icon">photo_camera_front</mat-icon>
                     Instagram
                 </h2>
                 <h1 class="label-value">Vinayak_7</h1>

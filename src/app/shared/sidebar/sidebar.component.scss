@@ -82,3 +82,10 @@
     white-space: nowrap;
     transition: opacity 0.2s ease, width 0.2s ease;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}

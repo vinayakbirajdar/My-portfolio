@@ -12,7 +12,7 @@ import { RouterLink, RouterLinkActive, RouterModule } from "@angular/router";
 })
 export class SidebarComponent {
 
-  isCollapsed = false;
+  isCollapsed = true;
 
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
