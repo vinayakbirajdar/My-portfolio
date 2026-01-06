@@ -1,35 +1,28 @@
 <div class="project-container">
-
-    <!-- HEADER -->
     <div class="project-header">
         <h2>Projects</h2>
-        <p>Some of the projects I’ve worked on using different technologies.</p>
+        <p>Some of the projects I have worked on</p>
     </div>
-
-    <!-- STACK FILTER -->
     <div class="stack-filter">
-        <button class="active">All</button>
-        <button>Angular</button>
-        <button>React Native</button>
-        <button>.NET</button>
+        <button *ngFor="let stack of stacks" (click)="selectStack(stack)" [class.active]="selectedStack === stack">
+            {{ stack }}
+        </button>
     </div>
-
-    <!-- PROJECT GRID -->
     <div class="project-grid">
+        <div class="project-card" *ngFor="let project of filteredProjects">
 
-        <!-- PROJECT CARD -->
-        <div class="project-card">
-            <div class="project-image"></div>
+            <div class="project-image">
 
-            <h3>My Parking App</h3>
-            <p>
-                A parking management system built with Angular and .NET.
-            </p>
+            </div>
+
+            <h4>{{ project.title }}</h4>
+            <p>{{ project.description }}</p>
 
             <div class="project-tech">
-                Angular · TypeScript · .NET
+                {{ project.tech.join(' • ') }}
             </div>
-        </div>
 
+        </div>
     </div>
+
 </div>

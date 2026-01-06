@@ -1,6 +1,6 @@
 /* IMPORT GLOBAL THEME */
 // @import './assets/styles/theme';
-@import './app/assets/theme.scss';
+@use './app/assets/theme.scss';
 
 /* GLOBAL RESET */
 html,
