@@ -1,31 +1,87 @@
-<div class="contact-container">
-    <div class="contact-card">
+<div class="main-container">
+    <div class="title-text">
+        <h2>Contact Me</h2>
+        <span class="label-text">You can reach me through</span>
+    </div>
 
-        <h2 class="contact-title">Contact Me</h2>
-        <p class="contact-subtitle">
-            Feel free to reach out for opportunities, collaboration, or queries.
-        </p>
+    <div class="sub-container">
+        <div class="right-panel">
+            <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" formControlName="firstName" placeholder="Enter your FIrts Name" />
+                    <small *ngIf="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid">
+                        Name is required
+                    </small>
+                </div>
 
-        <form class="contact-form">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" placeholder="Your name" />
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" formControlName="lastName" placeholder="Enter your name" />
+                    <small *ngIf="contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid">
+                        Name is required
+                    </small>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" formControlName="email" placeholder="Enter your email" />
+                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                        Valid email is required
+                    </small>
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea formControlName="message" rows="4" placeholder="Your message"></textarea>
+                    <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                        Message is required
+                    </small>
+                </div>
+                <div class="cv-button">
+                    Submit
+                </div>
+            </form>
+
+        </div>
+        <div class="left-panel">
+
+            <div class="info-item">
+                <h2 class="label-text">
+                    <mat-icon class="info-icon">mail</mat-icon>
+                    Gmail
+                </h2>
+                <h1 class="label-value">VinayakGmail.com</h1>
             </div>
 
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="Your email" />
+            <div class="info-item">
+                <h2 class="label-text">
+                    <mat-icon class="info-icon">call</mat-icon>
+                    Phone No.
+                </h2>
+                <h1 class="label-value">8788010226</h1>
             </div>
 
-            <div class="form-group">
-                <label>Message</label>
-                <textarea rows="4" placeholder="Your message"></textarea>
+            <div class="info-item">
+                <h2 class="label-text">
+                    <mat-icon class="info-icon">location_on</mat-icon>
+                    Location
+                </h2>
+                <h1 class="label-value">Pune</h1>
             </div>
 
-            <button type="button" class="submit-btn">
-                Send Message
-            </button>
-        </form>
+            <div class="info-item">
+                <h2 class="label-text">
+                    <mat-icon class="info-icon">camera_alt</mat-icon>
+                    Instagram
+                </h2>
+                <h1 class="label-value">Vinayak_7</h1>
+            </div>
+
+        </div>
+
 
     </div>
 </div>
