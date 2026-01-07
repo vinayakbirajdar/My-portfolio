@@ -6,6 +6,7 @@ interface Project {
   description: string;
   tech: string[];
   image?: string;
+  code?: string;
 }
 
 @Component({
@@ -18,28 +19,30 @@ interface Project {
 export class ProjectComponent {
   selectedStack: string = 'All';
 
-  stacks: string[] = ['All', 'Angular', 'React Native', 'Backend'];
+  stacks: string[] = ['All', 'Angular', 'React Native', '.Net'];
 
   projects: Project[] = [
     {
-      title: 'Turf Booking App',
-      description: 'Sports turf booking platform with real-time availability.',
-      tech: ['React Native']
-    },
-    {
       title: 'Parking Management System',
       description: 'Vehicle parking dashboard with wallet and activity tracking.',
-      tech: ['Angular', 'Backend']
+      tech: ['Angular', '.Net'],
+      image: 'app/assets/project-image/parkingManagment.png',
+      code: 'https://github.com/vinayakbirajdar/My-Parking-Web-App'
+
     },
     {
       title: 'My Task Manager',
       description: 'Mobile task manager app with all features',
-      tech: ['React Native']
+      tech: ['React Native'],
+      image: 'app/assets/project-image/myTask.png',
+
     },
     {
       title: 'Self Portfolio',
       description: 'An web app which showcase all my deatils',
-      tech: ['Angular']
+      tech: ['Angular'],
+      image: 'app/assets/project-image/myPortfolio.png',
+      code: 'https://github.com/vinayakbirajdar/My-portfolio'
     }
   ];
 
@@ -56,5 +59,12 @@ export class ProjectComponent {
     this.selectedStack = stack;
   }
 
+  openCode(codeUrl?: string) {
+    if (!codeUrl) {
+      alert('Code link not available');
+      return;
+    }
+    window.open(codeUrl, '_blank');
+  }
 
 }
